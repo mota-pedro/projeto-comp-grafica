@@ -4,8 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://bv7ly1ca510sl" path="res://Assets/Botão Narração.png" id="2_k7lr8"]
 [ext_resource type="Texture2D" uid="uid://bge2ilavd16ck" path="res://Assets/Botão Anterior.png" id="3_vrsaf"]
 [ext_resource type="Texture2D" uid="uid://55ytkqj7in3v" path="res://Assets/Botão Proximo.png" id="4_xw6im"]
+[ext_resource type="Script" path="res://Referencias/referencias.gd" id="5_script"]
 
 [node name="Referencias" type="Node2D" unique_id=2052332422]
+script = ExtResource("5_script")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=807352517]
 position = Vector2(384, 512)
@@ -17,6 +19,7 @@ offset_top = 918.0
 offset_right = 503.0
 offset_bottom = 988.0
 icon = ExtResource("2_k7lr8")
+flat = true
 
 [node name="Button Anterior" type="Button" parent="." unique_id=2022724287]
 offset_left = 41.0
@@ -24,6 +27,7 @@ offset_top = 918.0
 offset_right = 229.0
 offset_bottom = 988.0
 icon = ExtResource("3_vrsaf")
+flat = true
 
 [node name="Button Proximo" type="Button" parent="." unique_id=1648370912]
 offset_left = 535.0
@@ -31,3 +35,4 @@ offset_top = 918.0
 offset_right = 723.0
 offset_bottom = 988.0
 icon = ExtResource("4_xw6im")
+flat = true

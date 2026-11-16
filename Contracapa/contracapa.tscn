@@ -4,8 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://bv7ly1ca510sl" path="res://Assets/Botão Narração.png" id="2_f1pei"]
 [ext_resource type="Texture2D" uid="uid://dxneofoucfejq" path="res://Assets/Botão Inicio.png" id="3_bpxar"]
 [ext_resource type="Texture2D" uid="uid://bge2ilavd16ck" path="res://Assets/Botão Anterior.png" id="4_bpxar"]
+[ext_resource type="Script" path="res://Contracapa/contracapa.gd" id="5_script"]
 
 [node name="Contracapa" type="Node2D" unique_id=1388116953]
+script = ExtResource("5_script")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=282299289]
 position = Vector2(384, 512)
@@ -17,6 +19,7 @@ offset_top = 918.0
 offset_right = 503.0
 offset_bottom = 988.0
 icon = ExtResource("2_f1pei")
+flat = true
 
 [node name="Button Inicio" type="Button" parent="." unique_id=1005355976]
 offset_left = 535.0
@@ -24,6 +27,7 @@ offset_top = 918.0
 offset_right = 723.0
 offset_bottom = 988.0
 icon = ExtResource("3_bpxar")
+flat = true
 
 [node name="Button Anterior" type="Button" parent="." unique_id=842267812]
 offset_left = 41.0
@@ -31,3 +35,4 @@ offset_top = 918.0
 offset_right = 229.0
 offset_bottom = 988.0
 icon = ExtResource("4_bpxar")
+flat = true

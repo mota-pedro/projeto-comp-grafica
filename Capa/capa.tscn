@@ -3,8 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://cesof8f37i56w" path="res://Assets/Capa.png" id="1_846uo"]
 [ext_resource type="Texture2D" uid="uid://55ytkqj7in3v" path="res://Assets/Botão Proximo.png" id="2_0jj7y"]
 [ext_resource type="Texture2D" uid="uid://bv7ly1ca510sl" path="res://Assets/Botão Narração.png" id="3_m01uj"]
+[ext_resource type="Script" path="res://Capa/capa.gd" id="4_script"]
 
 [node name="Node2D" type="Node2D" unique_id=292983501]
+script = ExtResource("4_script")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=2043208595]
 position = Vector2(384, 512)
@@ -16,6 +18,7 @@ offset_top = 918.0
 offset_right = 723.0
 offset_bottom = 988.0
 icon = ExtResource("2_0jj7y")
+flat = true
 
 [node name="Button Narração" type="Button" parent="." unique_id=1498048385]
 offset_left = 262.0
@@ -23,3 +26,4 @@ offset_top = 918.0
 offset_right = 503.0
 offset_bottom = 988.0
 icon = ExtResource("3_m01uj")
+flat = true

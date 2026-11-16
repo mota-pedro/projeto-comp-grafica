@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://mhi5vw6bllu0"]
+
+[ext_resource type="Texture2D" uid="uid://bhkndxxpkttv" path="res://Assets/Pagina 2  - Estado 1.png" id="1_bg"]
+[ext_resource type="Texture2D" uid="uid://biregobelkf58" path="res://Assets/arvore.png" id="2_tree"]
+[ext_resource type="Texture2D" uid="uid://bge2ilavd16ck" path="res://Assets/Botão Anterior.png" id="3_prev"]
+[ext_resource type="Texture2D" uid="uid://bv7ly1ca510sl" path="res://Assets/Botão Narração.png" id="4_narr"]
+[ext_resource type="Texture2D" uid="uid://55ytkqj7in3v" path="res://Assets/Botão Proximo.png" id="5_next"]
+[ext_resource type="Script" uid="uid://haxasngm527w" path="res://Pagina02/pagina02.gd" id="6_script"]
+
+[sub_resource type="CircleShape2D" id="CircleShape_object"]
+radius = 185.0
+
+[node name="Pagina02" type="Node2D" unique_id=836850329]
+script = ExtResource("6_script")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1058442068]
+position = Vector2(384, 512)
+texture = ExtResource("1_bg")
+
+[node name="Object" type="Area2D" parent="." unique_id=410213000]
+position = Vector2(384, 620)
+collision_mask = 0
+
+[node name="Sprite" type="Sprite2D" parent="Object" unique_id=1925134709]
+texture = ExtResource("2_tree")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Object" unique_id=1538819203]
+shape = SubResource("CircleShape_object")
+
+[node name="Button Anterior" type="Button" parent="." unique_id=2018668490]
+offset_left = 52.0
+offset_top = 918.0
+offset_right = 232.0
+offset_bottom = 980.0
+icon = ExtResource("3_prev")
+flat = true
+
+[node name="Button Narração" type="Button" parent="." unique_id=2119156374]
+offset_left = 267.0
+offset_top = 918.0
+offset_right = 500.0
+offset_bottom = 980.0
+icon = ExtResource("4_narr")
+flat = true
+
+[node name="Button Proximo" type="Button" parent="." unique_id=628584726]
+offset_left = 535.0
+offset_top = 918.0
+offset_right = 715.0
+offset_bottom = 980.0
+icon = ExtResource("5_next")
+flat = true
