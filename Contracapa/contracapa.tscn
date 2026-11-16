@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://cs1himm62gfct"]
+
+[ext_resource type="Texture2D" uid="uid://bsg7xn2stihj4" path="res://Assets/Contra capa.png" id="1_y2gfx"]
+[ext_resource type="Texture2D" uid="uid://bv7ly1ca510sl" path="res://Assets/Botão Narração.png" id="2_f1pei"]
+[ext_resource type="Texture2D" uid="uid://dxneofoucfejq" path="res://Assets/Botão Inicio.png" id="3_bpxar"]
+[ext_resource type="Texture2D" uid="uid://bge2ilavd16ck" path="res://Assets/Botão Anterior.png" id="4_bpxar"]
+
+[node name="Contracapa" type="Node2D" unique_id=1388116953]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=282299289]
+position = Vector2(384, 512)
+texture = ExtResource("1_y2gfx")
+
+[node name="Button Narração" type="Button" parent="." unique_id=282902299]
+offset_left = 262.0
+offset_top = 918.0
+offset_right = 503.0
+offset_bottom = 988.0
+icon = ExtResource("2_f1pei")
+
+[node name="Button Inicio" type="Button" parent="." unique_id=1005355976]
+offset_left = 535.0
+offset_top = 918.0
+offset_right = 723.0
+offset_bottom = 988.0
+icon = ExtResource("3_bpxar")
+
+[node name="Button Anterior" type="Button" parent="." unique_id=842267812]
+offset_left = 41.0
+offset_top = 918.0
+offset_right = 229.0
+offset_bottom = 988.0
+icon = ExtResource("4_bpxar")

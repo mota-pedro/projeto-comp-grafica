@@ -18,8 +18,8 @@ offset_bottom = 988.0
 icon = ExtResource("2_0jj7y")
 
 [node name="Button Narração" type="Button" parent="." unique_id=1498048385]
-offset_left = 267.0
+offset_left = 262.0
 offset_top = 918.0
-offset_right = 508.0
+offset_right = 503.0
 offset_bottom = 988.0
 icon = ExtResource("3_m01uj")
